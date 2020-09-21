@@ -1,0 +1,17 @@
+---
+aws_access_key: ""
+aws_secret_key: ""
+
+application: "wordpress"
+target_env: "prod"
+aws_region: "us-east-1"
+aws_region_short: "ue1"
+aws_region_az: "c"
+vpc_name: "vpc-{{ aws_region_short }}-{{ target_env }}-{{ application }}"
+vpc_cidr_block: "172.27.0.0/16"
+public_subnet_1_cidr: "172.27.0.0/18"
+public_subnet_2_cidr: "172.27.64.0/18"
+private_subnet_1_cidr: "172.27.128.0/18"
+private_subnet_2_cidr: "172.27.192.0/18"
+keypair_name: "eiras-key"
+ssh_pubkey: 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCvL7QgVyUvPj+UwOHmE3+kGAngeEj9l69Kib2SMMCGjetLOHfsF+fvmsVvg3NaWRjqXUuJBZMRKl3yfRBxLhYjrPBfWg5hNZeJgy/XmgngmF8DSzrwBd37VUb2dR182EhUfS71N1NlsSpgVQY75y/LAlQTGKYAJep9IvAPtccrX8SidpjOgkl/lyrimA5Ndt+9H2cP6E0SyZ+jCahYyQAoQqokBCDsZK3oOsB8Jf0grcBQMw8Bf7V850c7yl6/h75vvtZixmhvcPMKcqH1ZB36u3LEIewLlp2vHfXxlUDd5/k9WB0csyLNOVaT657RONSlkq1gnT4uUSioCBEsS+VAqZtZ2nFkFKx+/a2vv2SjuNUEwFCwRETctzWbYF+QPT7wyXu7PN//nASrMdH3GUbYv3XxvxEAsGAASmxGLyUrFbi/YnS3VReHty0HZ+abgexvpQj5hcFLLs/wCWj5cy8zMlviwo+riwVhkQ1hvTIkYe1DfeTRh0DXzFmPZPFYV0M= eiras'
