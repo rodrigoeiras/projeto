@@ -6,8 +6,7 @@
     - { role: vpc, tags: [ 'vpc', 'infra', 'always' ] }
     - { role: app-ec2, tags: [ 'app-ec2', 'infra' ] }
 
-- hosts: ec2
-  remote_user: ubuntu
+- hosts: tag_Name_app 
   gather_facts: no
   pre_tasks:
     - name: instala o Python 2
